@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background: #505351;
+            color: #fff;
+            padding: 20px;
+            font-size: 24px;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: #d5e0dd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        input, textarea {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="pic1.jpg" alt="Muhammad Abdullahi">
+    <h1>Hello, I'm Muhammad Abdullahi</h1>
+    <p>A technology enthusiast and software developer passionate about web development, 
+    data analysis, and automation.</p>
+</header>
+
+<section id="education">
+    <h2>🎓 Educational Background</h2>
+    <p>B.Tech in Computer Science from Federal University of Technology Minna and MSc in Information Technology from Nigerian Defense Academy</p>
+    <a href="mycv.pdf" download class="button">Download My CV</a>
+</section>
+
+<section id="skills">
+    <h2>🛠️ Skills</h2>
+    <p>HTML, CSS, JavaScript, PHP, Python, SQL, Excel,and Power BI.</p>
+</section>
+
+<section id="interests">
+    <h2>💡 Interests</h2>
+    <p>Web Development, Machine Learning, Smart Energy Systems, Tech Innovations</p>
+</section>
+
+<section id="projects">
+    <h2>🚀 Projects</h2>
+   <div class="project">
+  <h3>Smart Energy Calculator</h3>
+  <p>A system to calculate energy consumption.</p>
+  <a href="#" onclick="window.open('eelectric.png', '_blank'); return false;">View Image</a>
+</div>
+
+    <div class="project">
+        <h3>E-commerce site</h3>
+        <p>Where you can search,select and pay for what you want.</p>
+        <a href="https://hammyx7.netlify.app" target="_blank">View Project</a>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>📬 Contact Me</h2>
+    <p>Email: <a href="mailto:hammyx77@gmail.com">hammyx77@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/hammyx-7" target="_blank">github.com/hammyx-7</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/muhammad-abdull" target="_blank">linkedin.com/in/muhammad-abdull</a></p>
+    
+    <h3>Send a Message</h3>
+    <form action="contact.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+</body>
+</html>
